@@ -174,7 +174,7 @@ do_configure_ssh() {
     fi
 
     # Always force PubkeyAuthentication yes
-    echo "# === Managed by setup-server.sh — do NOT edit manually ===" > "$conf_file"
+    echo "# === Managed by server-setup.sh — do NOT edit manually ===" > "$conf_file"
     echo "" >> "$conf_file"
     echo "# Mandatory: Public key authentication" >> "$conf_file"
     echo "PubkeyAuthentication yes" >> "$conf_file"
