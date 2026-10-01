@@ -22,8 +22,9 @@ sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/kami104/server-setup
      - Disable password login.
      - MaxAuthTries 5 & MaxSessions 5
    - Install `ufw` and:
-     - Automatically adds exception for SSH inbound connections.
-     - Allows the user to add custom inbound exceptions (port and protocol).
+     - Automatically disable IPv6 connections.
+     - Automatically add exception for SSH inbound connections.
+     - Allow the user to add inbound exceptions (port and protocol).
      - After adding exceptions, it activates the firewall.
    - Install `fail2ban` for the SSH port.
    - Install docker-engine following with the official apt repository. See [official docs](https://docs.docker.com/engine/install/debian/).
